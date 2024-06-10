@@ -70,19 +70,10 @@ function Card:use_consumeable(area, copier)
                 print("Triggering Planet card - iteration: " .. i)
                 Card_use_consumeable_ref(self, area, copier)
                 -- Call update_hand_text to simulate the Planet card effect
-                update_hand_text(
-                    { sound = "button", volume = 0.7, pitch = 0.8, delay = 0.3 },
-                    {
-                        handname = localize(self.ability.consumeable.hand_type, 'poker_hands'),
-                        chips = G.GAME.hands[self.ability.consumeable.hand_type].chips,
-                        mult = G.GAME.hands[self.ability.consumeable.hand_type].mult,
-                        level = G.GAME.hands[self.ability.consumeable.hand_type].level
-                    }
-                )
+                
                 -- Debug: Print after calling the original function and update_hand_text
                 print("Triggered Planet card - iteration: " .. i .. " completed.")
             end
-            return
         end
     end
     
