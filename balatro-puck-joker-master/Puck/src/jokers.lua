@@ -52,7 +52,7 @@ function Card:use_consumeable(area, copier)
     end
 
     -- Check if the card is a Planet card by checking its hand_type field
-    if self.ability and self.ability.consumeable and self.ability.consumeable.hand_type == "Planet" then
+    if self.ability and self.ability.consumeable and self.ability.consumeable.hand_type then
         -- Debug: Print that a Planet card is detected
         print("Planet card detected.")
         
