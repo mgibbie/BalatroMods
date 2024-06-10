@@ -1,6 +1,4 @@
-# Tag Team - Custom Joker for Balatro
-
-![Metamorphosis Deck](./TagTeam/previews/preview.png)
+# Puck - Custom Joker for Balatro
 
 This mod features one (1) custom Joker.
 
